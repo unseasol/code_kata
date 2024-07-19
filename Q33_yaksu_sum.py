@@ -12,4 +12,4 @@ def solution(left, right):
             answer -= i
     return answer
 
-print(solution(13,15))
+print(solution(13,17))
