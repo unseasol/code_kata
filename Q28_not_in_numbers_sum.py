@@ -17,6 +17,15 @@
 #     total = sum(sums)
 #     return sums
 
+# def solution(numbers):
+#     total = 45-sum(numbers)
+#     return total
+
 def solution(numbers):
-    total = 45-sum(numbers)
-    return total
+    num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+    sums = 0
+    for i in range(len(num_list)):
+        if num_list[i] not in numbers:
+            sums += num_list[i]
+
+    return sums
